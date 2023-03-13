@@ -544,9 +544,10 @@ const LandingPage = () => {
         </Box>
 
         {/* Insure Device */}
-        <Box py="250px" bg="#EAEAEA">
+        <Box py={{ base: "250px", lg: "250px" }} bg="#EAEAEA">
           <Box
             bg="#1F162A"
+            //bg="red"
             justifyContent="center"
             display="flex"
             flexDirection={{ base: "column", lg: "row" }}
@@ -559,7 +560,7 @@ const LandingPage = () => {
               w={{ base: "200px", lg: "350px" }}
             >
               <Image
-                h={{ base: "500px", lg: "700px" }}
+                h={{ base: "400px", lg: "600px" }}
                 src={phone}
                 alt="logo"
               />
@@ -568,7 +569,7 @@ const LandingPage = () => {
             <Box
               textAlign={{ base: "center" }}
               w={{ base: "100%", lg: "35%" }}
-              mt={{ base: "50px", lg: "100px" }}
+              mt={{ base: "50px", lg: "40px" }}
               ml={{ base: "0px", lg: "100px" }}
               p={{ base: "25px" }}
             >
@@ -595,7 +596,11 @@ const LandingPage = () => {
                 Safeguard your device from theft using AI technology.
               </Text>
 
-              <HStack mt="40px" py="40px" justifyContent={{ base: "center" }}>
+              <HStack
+                mt={{ base: "40px", lg: "20px" }}
+                py={{ base: "30px", lg: "10px" }}
+                justifyContent={{ base: "center" }}
+              >
                 <Image src={googlebadge} alt="logo" />
                 <Image src={appbadge} alt="logo" />
               </HStack>
