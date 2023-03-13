@@ -78,7 +78,7 @@ const LandingPage = () => {
         >
           <HStack spacing="30px" ml={{ lg: "90px" }}>
             <Box pr={{ lg: "20px" }}>
-              <Image src={logo2} alt="logo" />
+              <Image src={backgroundimage2} alt="logo" />
             </Box>
             <Box>
               <Link color="#823ED1" fontWeight={700} fontSize="13px">
