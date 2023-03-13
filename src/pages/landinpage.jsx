@@ -208,16 +208,18 @@ const LandingPage = () => {
                 Croissant fruitcake tart jujubes bonbon pie cream biscuit
                 pudding. Chocolate cake pudding jujubes lollipop cake.
               </Text>
-              <Button
-                color="#FFFFFF"
-                fontSize="13px"
-                fontWeight={700}
-                bg="#823ED1"
-                rightIcon={<BsArrowRight />}
-                variant="#823ED1"
-              >
-                Get Started
-              </Button>
+              <RouteLink to="/login">
+                <Button
+                  color="#FFFFFF"
+                  fontSize="13px"
+                  fontWeight={700}
+                  bg="#823ED1"
+                  rightIcon={<BsArrowRight />}
+                  variant="#823ED1"
+                >
+                  Get Started
+                </Button>
+              </RouteLink>
               <Wrap
                 mt="55px"
                 mb={{ base: "20px" }}
