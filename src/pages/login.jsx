@@ -11,8 +11,8 @@ import {
   Button,
   Icon,
 } from "@chakra-ui/react";
-import logo from "/home/sodiq/rapidmvp/frontend/phonflag/src/logo.png";
-import arrow from "/home/sodiq/rapidmvp/frontend/phonflag/src/arrow.png";
+import logo from "./image/logo.png";
+import arrow from "./image/arrow.png";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";

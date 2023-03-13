@@ -9,16 +9,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import {
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerContentProps,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerProps,
-  useDisclosure,
   Image,
   Flex,
   Text,
@@ -33,39 +23,35 @@ import {
   AccordionIcon,
   Wrap,
   WrapItem,
-  FormControl,
-  FormLabel,
   Input,
   InputGroup,
   InputRightElement,
-  Checkbox,
   Divider,
   Button,
   Icon,
 } from "@chakra-ui/react";
-import logo2 from "/home/sodiq/rapidmvp/frontend/phonflag/src/logo2.png";
-import logo from "/home/sodiq/rapidmvp/frontend/phonflag/src/logo.png";
-import coinbase from "/home/sodiq/rapidmvp/frontend/phonflag/src/coinbase.png";
-import spotify from "/home/sodiq/rapidmvp/frontend/phonflag/src/spotify.png";
-import slack from "/home/sodiq/rapidmvp/frontend/phonflag/src/slack.png";
-import dropbox from "/home/sodiq/rapidmvp/frontend/phonflag/src/dropbox.png";
-import webflow from "/home/sodiq/rapidmvp/frontend/phonflag/src/webflow.png";
-import zoom from "/home/sodiq/rapidmvp/frontend/phonflag/src/zoom.png";
-import backgroundimage1 from "/home/sodiq/rapidmvp/frontend/phonflag/src/backgroundimage1.png";
-import backgroundimage2 from "/home/sodiq/rapidmvp/frontend/phonflag/src/backgroundimage2.png";
-import one from "/home/sodiq/rapidmvp/frontend/phonflag/src/one.png";
-import two from "/home/sodiq/rapidmvp/frontend/phonflag/src/two.png";
-import three from "/home/sodiq/rapidmvp/frontend/phonflag/src/three.png";
-import arrow from "/home/sodiq/rapidmvp/frontend/phonflag/src/arrow.png";
-import user from "/home/sodiq/rapidmvp/frontend/phonflag/src/user.png";
-import radar from "/home/sodiq/rapidmvp/frontend/phonflag/src/radar.png";
-import smartphone from "/home/sodiq/rapidmvp/frontend/phonflag/src/smartphone.png";
-import phone from "/home/sodiq/rapidmvp/frontend/phonflag/src/phone.png";
-import googlebadge from "/home/sodiq/rapidmvp/frontend/phonflag/src/googlebadge.png";
-import appbadge from "/home/sodiq/rapidmvp/frontend/phonflag/src/appbadge.png";
-import indicator from "/home/sodiq/rapidmvp/frontend/phonflag/src/indicator.png";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
+import logo2 from "./image/logo2.png";
+import logo from "./image/logo.png";
+import coinbase from "./image/coinbase.png";
+import spotify from "./image/spotify.png";
+import slack from "./image/slack.png";
+import dropbox from "./image/dropbox.png";
+import webflow from "./image/webflow.png";
+import zoom from "./image/zoom.png";
+import backgroundimage1 from "./image/backgroundimage1.png";
+import backgroundimage2 from "./image/backgroundimage2.png";
+import one from "./image/one.png";
+import two from "./image/two.png";
+import three from "./image/three.png";
+
+import user from "./image/user.png";
+import radar from "./image/radar.png";
+import smartphone from "./image/smartphone.png";
+import phone from "./image/phone.png";
+import googlebadge from "./image/googlebadge.png";
+import appbadge from "./image/appbadge.png";
+import indicator from "./image/indicator.png";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import {
@@ -78,15 +64,9 @@ import {
 import { Link as RouteLink } from "react-router-dom";
 
 const LandingPage = () => {
-  // const { isOpen, onOpen, onClose } = useDisclosure();
-  // const btnRef = React.useRef();
   let [display, changeDisplay] = useState(false);
   return (
-    <Box
-      bg="#F4F4F4"
-      // bg={{base:"red",sm:"green",md:"yellow",lg:"blue"}}
-      h="100vh"
-    >
+    <Box bg="#F4F4F4" h="100vh">
       {/* Header */}
       <Box display={{ base: "none", lg: "block" }}>
         <Box
