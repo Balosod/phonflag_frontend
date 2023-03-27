@@ -135,7 +135,7 @@ const LandingPage = () => {
         </Flex>
       </Box>
 
-      <Box mt="0" mb="0" bg="black">
+      <Box mt="0" mb="0" bg="black" display={{ base: "block", lg: "none" }}>
         <Box display={display ? "block" : "none"}>
           <Box p="4" align="right">
             <AiOutlineClose
