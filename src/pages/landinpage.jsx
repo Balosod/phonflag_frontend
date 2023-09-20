@@ -98,7 +98,7 @@ const LandingPage = () => {
             </Box>
           </HStack>
 
-          <HStack ml={{ lg: "530px" }}>
+          <HStack ml={{ lg: "450px" }}>
             <Box pr="20px">
               <RouteLink to="/login">
                 <Text color="#FFFFFF" fontWeight={700} fontSize="13px">
@@ -340,7 +340,7 @@ const LandingPage = () => {
               //    justifyContent={{base:"null", md:"center", lg:"null"}}
               mt="50px"
               size="lg"
-              w={{ sm: "400px", md: "340px", lg: "447px" }}
+              w={{ sm: "400px", md: "340px", lg: "400px" }}
               ml={{ md: "auto", lg: "0" }}
               mr={{ md: "auto", lg: "0" }}
               bg="#FFFFFF"
@@ -802,7 +802,7 @@ const LandingPage = () => {
 
         {/* Foooter */}
         <Box mt="150px" bg="#1F162A">
-          <Box display="flex" flexDirection={{ base: "column", lg: "row" }}>
+          <Box display="flex" flexDirection={{ base: "column", md:"row", lg: "row" }}>
             <Box m={{ base: "50px", lg: "90px" }}>
               <Image src={logo} alt="logo" />
               <Stack spacing={0} my="30px">
@@ -907,11 +907,11 @@ const LandingPage = () => {
               </Text>
             </Box>
             <Box
-              ml={{ base: "40px", lg: "750px" }}
+              ml={{ base: "40px", lg: "700px" }}
               mt={{ base: "0px", lg: "40px" }}
               mb={{ base: "20px" }}
             >
-              <HStack gap="12px">
+              <HStack gap="4px">
                 <BsTwitter
                   size="25px"
                   color="#8A8A8A"
